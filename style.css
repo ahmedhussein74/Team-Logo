@@ -1,0 +1,329 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+header{
+    width: 100%;
+    height: 100px;
+    background-color: darkslategrey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header span{
+    font-size: 60px;
+    font-weight: bold;
+    text-transform: capitalize;
+    color: white;
+}
+article{
+    width: 100%;
+    height: 800px;
+    padding: 10px;
+    background-color: #eee;
+    display: flex;
+    justify-content: space-around;
+}
+#first{
+    width: 30%;
+    height: 100%;
+    text-align: center;
+}
+#first span{
+    display: block;
+    font-size: 30px;
+    text-transform: capitalize;
+    margin: 30px 0 10px 0;
+}
+#first input{
+    width: 250px;
+    height: 40px;
+    border-radius: 15px;
+    font-size: 20px;
+    margin-bottom: 50px;
+}
+#first img{
+    width: 350px;
+    height: 350px;
+    animation: move 3s linear 0s infinite ;
+}
+#second{
+    width: 60%;
+    height: 100%;
+}
+#third{
+    width: 100%;
+    height: 85%;
+    padding: 10px;
+    background-color: white;
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 15px;
+}
+#four{
+    width: 100%;
+    height: 100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#four button{
+    width: 30%;
+    height: 50px;
+    color: white;
+    border: 0px;
+    border-radius: 10px;
+    font-size: 25px;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+#download{
+    color: white;
+    text-decoration: none;
+}
+aside{
+    width: 100%;
+    background-color: #eee;
+    display: grid;
+    grid-template-columns: repeat(7,auto);
+    grid-template-rows: repeat(1,100px);
+    gap: 20px;
+    justify-content: center;
+}
+i{
+    font-size: 3rem;
+    cursor: pointer;
+}
+aside a{
+    text-decoration: none;
+    color: black;
+}
+i:hover{
+    color: #1877f2;
+}
+.fa-whatsapp:hover{
+    color: #10bf46;
+}
+footer{
+    width: 100%;
+    height: 100px;
+    padding-top: 15px;
+    text-transform: capitalize;
+    text-align: center;
+    font-size: 25px;
+    color: white;
+    background-color: darkslategrey;
+}
+@keyframes move{
+    50%{
+        transform: translateY(60px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+
+/* large large large */
+@media screen and (max-width:1024px) and (min-width:768px)
+{
+    header span{
+        font-size: 40px;
+    }
+    #first img{
+        width: 250px;
+        height: 250px;
+        animation: move 3s linear 0s infinite ;
+    }
+    #third{
+        width: 100%;
+        height: 80%;
+        padding: 10px;
+        border-radius: 15px;
+    }
+    article{
+        width: 100%;
+        height: 700px;
+        padding: 10px;
+        background-color: #eee;
+        display: flex;
+        justify-content: space-around;
+    }
+    #four button{
+        width: 45%;
+        height: 50px;
+        color: white;
+        border: 0px;
+        border-radius: 10px;
+        font-size: 20px;
+        text-transform: capitalize;
+        cursor: pointer;
+    }
+    footer{
+        padding-top: 15px;
+        line-height: 35px;
+        font-size: 25px;
+        color: white;
+        background-color: darkslategrey;
+    }
+}
+
+/* medium medium medium */
+@media screen and (max-width:767px) and (min-width:425px)
+{
+    header{
+        height: 60px;
+    }
+    header span{
+        font-size: 30px;
+    }
+    #first{
+        width: 40%;
+        height: 100%;
+        text-align: center;
+    }
+    #second{
+        width: 60%;
+        height: 100%;
+    }
+    #first img{
+        width: 120px;
+        height: 120px;
+        animation: move 3s linear 0s infinite ;
+    }
+    #first span{
+        display: block;
+        font-size: 20px;
+        text-transform: capitalize;
+        margin: 30px 0 10px 0;
+    }
+    #first input{
+        width: 120px;
+        height: 25px;
+        border-radius: 15px;
+        font-size: 15px;
+        margin-bottom: 10px;
+    }
+    #third{
+        width: 100%;
+        height: 75%;
+        padding: 10px;
+        border-radius: 15px;
+    }
+    article{
+        width: 100%;
+        height: 450px;
+        padding: 10px;
+        background-color: #eee;
+        display: flex;
+        justify-content: space-around;
+    }
+    #four button{
+        width: 45%;
+        height: 30px;
+        border: 0px;
+        border-radius: 10px;
+        font-size: 13px;
+        font-weight: bold;
+    }
+    footer{
+        padding-top: 15px;
+        line-height: 35px;
+        font-size: 15px;
+        color: white;
+        background-color: darkslategrey;
+    }
+    i{
+        font-size: 1.5rem;
+    }
+    aside{
+        width: 100%;
+        background-color: #eee;
+        display: grid;
+        grid-template-columns: repeat(7,auto);
+        grid-template-rows: repeat(1,50px);
+        gap: 20px;
+        justify-content: center;
+    }
+}
+
+/* small small small */
+@media screen and (max-width:424px)
+{
+    header{
+        height: 50px;
+    }
+    header span{
+        font-size: 25px;
+    }
+    article{
+        width: 100%;
+        height: 400px;
+        justify-content: space-between;
+    }
+    #first{
+        width: 40%;
+        height: 100%;
+        text-align: center;
+    }
+    #second{
+        width: 55%;
+        height: 100%;
+    }
+    #first img{
+        width: 120px;
+        height: 120px;
+        animation: move 3s linear 0s infinite ;
+    }
+    #first span{
+        display: block;
+        font-size: 20px;
+        text-transform: capitalize;
+        margin: 20px 0 5px 0;
+    }
+    #first input{
+        width: 120px;
+        height: 25px;
+        border-radius: 15px;
+        font-size: 15px;
+        margin-bottom: 5px;
+    }
+    #third{
+        width: 100%;
+        height: 60%;
+        padding: 10px;
+        border-radius: 15px;
+    }
+    #four button{
+        width: 47%;
+        height: 30px;
+        border: 0px;
+        border-radius: 8px;
+        font-size: 10px;
+        font-weight: bold;
+    }
+    footer{
+        height: 60px;
+        padding-top: 15px;
+        line-height: 20px;
+        font-size: 10px;
+        color: white;
+        background-color: darkslategrey;
+    }
+    i{
+        font-size: 1.5rem;
+    }
+    aside{
+        width: 100%;
+        background-color: #eee;
+        display: grid;
+        grid-template-columns: repeat(7,auto);
+        grid-template-rows: repeat(1,50px);
+        gap: 20px;
+        justify-content: center;
+    }
+}
