@@ -169,6 +169,7 @@ footer{
         font-size: 25px;
         color: white;
         background-color: darkslategrey;
+        bottom:0;
     }
 }
 
@@ -236,6 +237,7 @@ footer{
         font-size: 15px;
         color: white;
         background-color: darkslategrey;
+        bottom:0;
     }
     i{
         font-size: 1.5rem;
@@ -313,6 +315,7 @@ footer{
         font-size: 10px;
         color: white;
         background-color: darkslategrey;
+        bootom:0;
     }
     i{
         font-size: 1.5rem;
